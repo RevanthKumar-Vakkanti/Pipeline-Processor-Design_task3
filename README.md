@@ -78,6 +78,12 @@
 
 ## OUTPUT WAVEFORM:
 
+![Image](https://github.com/user-attachments/assets/e17ea55a-f6c5-4873-a832-f8d3203b002f)
+
 ## OUTPUT WAVEFORM INCULDING REGISTERS:
 
+![Image](https://github.com/user-attachments/assets/38544055-1a7a-433f-a6cc-3d452999dcdf)
+
 ## SCHEMATIC DIAGRAM:
+
+![Image](https://github.com/user-attachments/assets/6228dd6f-c390-46cf-8ea6-84ac838a54bb)
