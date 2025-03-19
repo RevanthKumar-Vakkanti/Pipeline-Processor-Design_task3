@@ -12,7 +12,7 @@
 
 *MENTOR*: NEELA SANTOSH KUMAR
 
-## DESCRIPTION: TASK-2
+## DESCRIPTION: TASK-3
 
 => Design a *4-stage pipelined processor* with basic instructions like *ADD, SUB & LOAD.*
 
@@ -20,3 +20,64 @@
     Instead of executing one instruction at a time, a pipelined processor overlaps different stages of multiple instructions, improving overall performance.
     It works similarly to an assembly line, where different parts of an instruction are processed simultaneously in different pipeline stages.
     
+## Key Stages of a Pipeline Processor
+
+ A basic four-stage pipeline consists of:
+ 
+  1. Instruction Fetch (IF) – Fetches the instruction from memory.
+     
+  2. Instruction Decode (ID) – Decodes the instruction and identifies operands.
+     
+  3. Execute (EX) – Performs the required operation (e.g., addition, subtraction).
+  
+  4. Write Back (WB) – Writes the computed result back to the register.
+
+## implements a 4-stage pipelined processor.
+
+   1. Registers Used in Pipeline Stages
+
+      * *IF_ID_instr* → Holds the instruction after fetch.
+
+      * *ID_EX_op1, ID_EX_op2, ID_EX_opcode* → Stores operands and opcode after the decode stage.
+      
+      * *EX_WB_result* → Holds the result after execution, before writing back.
+   
+   2. Local Parameters for Operations
+
+      * *ADD = 2'b00* → Addition operation.
+
+      * *SUB = 2'b01* → Subtraction operation.
+
+      * *LOAD = 2'b10* → Load immediate value
+
+   3. Pipeline Stages Implementation
+
+      * Instruction Fetch (IF) Stage - Fetches instruction from instr input and stores it in IF_ID_instr.
+
+      * Instruction Decode (ID) Stage - Extracts opcode and operands from IF_ID_instr and stores them in ID_EX_opcode, ID_EX_op1, and ID_EX_op2.
+
+      * Execute (EX) and Write Back (WB) Stage
+
+        - Performs the operation based on ID_EX_opcode.
+
+        - Writes the result into EX_WB_result.
+
+        - Passes the final result to the output register result.
+
+## Applications of Pipelined Processors
+
+   * General-Purpose Computing – Used in modern CPUs to improve instruction execution speed.
+   
+   * Embedded Systems – Used in microcontrollers and DSPs for efficient processing.
+   
+   * Graphics Processing (GPUs) – Pipelining enhances parallel execution of graphics tasks.
+   
+   * Network Processors – Used in routers and switches for fast packet processing.
+   
+   * Real-time Systems – Used in automotive and industrial applications where quick responses are needed.
+
+## OUTPUT WAVEFORM:
+
+## OUTPUT WAVEFORM INCULDING REGISTERS:
+
+## SCHEMATIC DIAGRAM:
