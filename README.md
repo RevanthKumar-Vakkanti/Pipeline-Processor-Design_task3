@@ -28,11 +28,11 @@
      
   2. Instruction Decode (ID) – Decodes the instruction and identifies operands.
      
-  3. Execute (EX) – Performs the required operation (e.g., addition, subtraction).
+  3. Execute (EX) – Performs the required operation (e.g., addition, subtraction, load).
   
   4. Write Back (WB) – Writes the computed result back to the register.
 
-## implements a 4-stage pipelined processor.
+## Implements a 4-stage pipelined processor.
 
    1. Registers Used in Pipeline Stages
 
