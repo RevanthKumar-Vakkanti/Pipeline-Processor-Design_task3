@@ -21,9 +21,9 @@
 
 
 module pipelined_processor (
-    input wire clk,          // Clock signal
-    input wire rst,          // Reset signal
-    input wire [7:0] instr,  // 8-bit instruction input
+    input  clk,          // Clock signal
+    input  rst,          // Reset signal
+    input  [7:0] instr,  // 8-bit instruction input
     output reg [7:0] res  // 8-bit output result
 );
 
